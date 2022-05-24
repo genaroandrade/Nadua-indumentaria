@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+@font-face {
+  font-family: "DrawveticaMini";
+  src: url("../fonts/DrawveticaMini.ttf");
+}
+
+@font-face {
+  font-family: "BPdiet";
+  src: url("../fonts/BPdiet.otf");
+}
+
+body {
+  background-color: rgb(225, 237, 196);
+}
+
+h1 {
+  color: rgb(61, 61, 109);
+  margin: 15px;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+
+.listaordenada li {
+  display: inline;
+  list-style-type: none;
+  border: 1px solid black;
+  margin: 3px;
+  border-radius: 7px;
+
+}
+
+.listadesordenada li {
+  display: inline;
+  border: 1px solid black;
+  padding: 1px;
+  margin: 3px;
+  border-radius: 7px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+h2,
+h3,
+span {
+  color: blue;
+  margin: 15px;
+}
+
+main img,
+footer img,
+iframe {
+  margin: 15px;
+}
+
+.logoimg {
+  width: 125px;
+  height: 125px;
+  border-top: 5px solid rgb(201, 201, 126);
+  border-radius: 50%;
+}
+
+.logoimg1 {
+  border-radius: 50%;
+
+  width: 120px;
+  height: 120px;
+
+
+}
+
+
+caption {
+  padding: 10px;
+  font-style: italic;
+  color: rgb(78, 78, 187);
+  text-align: center;
+  caption-side: bottom;
+  margin: 15px;
+}
+
+table {
+  width: 50%;
+  margin: 20px;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+tr,th,td {
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+p {
+  font-family: "DrawveticaMini";
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header {
+  height: 40vh;
+  /* se puede uutilizae medidas vh para el alto y para el ancho vw*/
+  display: grid;
+  /*grid-template-columns: 200px 200px 220px 220px;*/
+  grid-template-columns: repeat(2, 1fr);
+  /*esta es la forma corta de arriba 1fr significa uuna fraccion de la pantalla */
+  grid-template-rows: 2fr, 2fr;
+  /* ver esto que no me modifica las filas*/
+  gap: 1rem
+  
+}
+
+.h1nombre,
+.logonadua,
+.listaor,
+.desordenada {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.h1nombre {
+  background-color: aqua;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.listaor {
+  background-color: blueviolet;
+}
+
+.logonadua {
+  background-color: chartreuse;
+
+}
+
+.desordenada {
+  
+  background-color: cornflowerblue;
+  grid-column: 1;
+  grid-row: 2;
+
+}
+
+
+.doradoimg {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 50%;
+  right: 15px;
+}
+
+
+.footer {
+  display:grid;
+  /*display: flex;*/
+  padding: 80px;
+  grid-template-columns: 100px;
+  grid-template-rows: 2fr,2fr,2fr;
+
+}
+
+
+
+main {
+  
+  padding:80px;
+ /* display: flex;
+  padding: 80px;*/
+}
+@media screen and (min-width:920px) {
+  main{
+    display: flex;
+  }
+  .footer{
+    display: flex;
+  }
+  .h1nombre {
+    background-color: rgb(232, 232, 52);
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .listaor {
+    background-color: rgb(213, 191, 233);
+  }
+  
+  .logonadua {
+    background-color: rgb(126, 53, 242);
+  
+  }
+  
+  .desordenada {
+    
+    background-color: rgb(240, 241, 242);
+    grid-column: 1;
+    grid-row: 2;
+  
+  }
+  .contacto{
+    font-size: 100px;
+    color: brown;
+    font-family:Verdana, Geneva, Tahoma, sans-serif cursive
+  }
+  table {
+    width: 1100px;
+    margin: 40px;
+    border: 3px solid rgb(206, 61, 61);
+    border-collapse: collapse;
+  }
+    .tabla{
+      font-size: 80px;
+      color: brown;
+      padding:15px;
+      text-align: center;
+    }
+     .titulodeparrafo{
+      font-size:50px ;
+      color: brown;
+      text-align: center;
+    }
+}
+@media screen and (max-width:812px){
+  p{
+    font-size: 1rem;
+  }
+
+}
