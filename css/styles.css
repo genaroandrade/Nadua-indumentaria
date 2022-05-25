@@ -153,6 +153,7 @@ p {
 
 .logonadua {
   background-color: chartreuse;
+  
 
 }
 
@@ -242,10 +243,93 @@ main {
       color: brown;
       text-align: center;
     }
+    body{
+      background-image: linear-gradient(90deg, rgb(220, 156, 156), white);
+      
+    }
+    .logonadua:hover{/*agregando el hover hace la transicion al pasar el mauuse*/
+      background: linear-gradient( rgb(141, 158, 205), rgb(169, 122, 122));
+      /*transform: translate(350px,450px);*/
+      transform: rotate(15deg) scale(.50,1.2);
+      transition: all 3s;
+      
+    
+      
+    }
+    .desordenada{
+      background-image: linear-gradient(-20deg, rgb(214, 118, 118), white);
+     
+    }
+    .h1nombre:hover{
+      background-image: linear-gradient(90deg, rgb(129, 172, 227), white);
+      /*transform: rotate(45deg);
+      transform: translate(250px,50px);
+      esto lo ponemos las dos en 1 sino no agarra por cascada*/
+      transform: rotate(15deg) translate(50px,50px) scale(.50,1.2) skew(5deg,15deg);;/* aqui la forma de las 4 rotate, translate,skew(deg gradosde inclinacion en ejes x,y) ,scale si se elije un eje se pone scale(x)o(y)*/
+      
+      }
+      .h1nombre{
+        transition: all 4s;
+      }
+      
+    
+    .listaor{
+      background-image: radial-gradient(rgb(176, 176, 235), rgb(168, 147, 147) 20%, rgb(219, 230, 218));
+      
+      
+    
+    }
+    header{
+      background-image: radial-gradient(rgb(236, 158, 158), rgb(219, 219, 200), rgb(173, 185, 209));
+    }
+    .hover{
+      background-color: aqua;
+    }
+    .li{
+      background-color:yellow ;
+      }
+      
+    .hover:hover{
+      background-image: linear-gradient(rgb(129, 129, 167),red);
+     
+    }
+    .li:hover{
+      background-image: linear-gradient(rgb(95, 95, 215),rgb(136, 87, 87));
+      
+    }
+    .listaordenada:hover{
+      font-size: 35px;
+      transition: all 5s;
+      
+    }
+    .listaor:hover{
+      background-image: radial-gradient(rgb(224, 191, 191),rgb(95, 95, 169));
+    }
+    
+    .listadesordenada:hover{
+      font-size: 35px;
+      transition: all 5s;
+     
+    }
+    .desordenada:hover{
+      background-image: radial-gradient(rgb(224, 328, 318),rgb(75, 75, 169));
+    }
 }
 @media screen and (max-width:812px){
   p{
     font-size: 1rem;
   }
 
+}
+/*esta animation se ve en web y mobil todo lo anterior esta dentro de formato escritorio */
+.animate__animated{
+  animation-delay:2s ;
+  animation-duration: 10s;
+  
+}
+.animate__hinge{
+  animation-delay:2s ;
+  animation-duration: 5s;
+  
+  
 }
