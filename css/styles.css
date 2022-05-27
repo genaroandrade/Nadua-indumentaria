@@ -26,7 +26,7 @@ h1 {
   margin-bottom: 35px;
   font-size: 30px;
   font-style: italic;
-  font-weight: bold;
+  
   font-family: cursive;
   text-align: center;
   line-height: 1.5;
@@ -37,15 +37,17 @@ h1 {
 .listaordenada li {
   display: inline;
   list-style-type: none;
-  border: 1px solid black;
-  margin: 3px;
+  border: 2px solid black;
+  margin: 4px;
+  padding: 1px 5px;
   border-radius: 7px;
 
 }
 
+
 .listadesordenada li {
   display: inline;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 1px;
   margin: 3px;
   border-radius: 7px;
@@ -53,6 +55,10 @@ h1 {
 
 a {
   text-decoration: none;
+  color:rgb(26, 22, 22);
+  box-sizing: border-box;
+  justify-content: space-around;
+  
 }
 
 header {
@@ -77,7 +83,7 @@ iframe {
 .logoimg {
   width: 125px;
   height: 125px;
-  border-top: 5px solid rgb(201, 201, 126);
+  border-top: 5px solid rgb(28, 28, 26);
   border-radius: 50%;
 }
 
@@ -112,6 +118,7 @@ tr,th,td {
   padding: 10px;
   text-align: center;
   
+  
 }
 
 p {
@@ -137,40 +144,40 @@ p {
 .logonadua,
 .listaor,
 .desordenada {
-  border: 1px solid black;
+  border: 1px ;
   padding: 10px;
 }
 
 .h1nombre {
-  background-color: aqua;
+  
   grid-column: 2;
   grid-row: 1;
 }
-
+/*
 .listaor {
-  background-color: blueviolet;
+  background-color: ;
 }
 
 .logonadua {
-  background-color: chartreuse;
+  background-color:;
   
 
 }
 
 .desordenada {
   
-  background-color: cornflowerblue;
+  background-color: ;
   grid-column: 1;
   grid-row: 2;
 
 }
 
-
+*/
 .doradoimg {
   height: 80px;
   width: 80px;
   position: fixed;
-  bottom: 50%;
+  bottom: 5%;
   right: 15px;
 }
 
@@ -199,28 +206,11 @@ main {
   .footer{
     display: flex;
   }
-  .h1nombre {
-    background-color: rgb(232, 232, 52);
-    grid-column: 2;
-    grid-row: 1;
-  }
   
-  .listaor {
-    background-color: rgb(213, 191, 233);
-  }
   
-  .logonadua {
-    background-color: rgb(126, 53, 242);
   
-  }
   
-  .desordenada {
-    
-    background-color: rgb(240, 241, 242);
-    grid-column: 1;
-    grid-row: 2;
   
-  }
   .contacto{
     font-size: 100px;
     color: brown;
@@ -244,76 +234,41 @@ main {
       text-align: center;
     }
     body{
-      background-image: linear-gradient(90deg, rgb(220, 156, 156), white);
+      background-image: linear-gradient(90deg, rgb(210, 216, 145), white);
       
     }
     .logonadua:hover{/*agregando el hover hace la transicion al pasar el mauuse*/
-      background: linear-gradient( rgb(141, 158, 205), rgb(169, 122, 122));
+      
       /*transform: translate(350px,450px);*/
-      transform: rotate(15deg) scale(.50,1.2);
+      transform: rotate(5deg) ;
       transition: all 3s;
       
+    }
     
-      
-    }
-    .desordenada{
-      background-image: linear-gradient(-20deg, rgb(214, 118, 118), white);
-     
-    }
     .h1nombre:hover{
-      background-image: linear-gradient(90deg, rgb(129, 172, 227), white);
+      
       /*transform: rotate(45deg);
       transform: translate(250px,50px);
       esto lo ponemos las dos en 1 sino no agarra por cascada*/
-      transform: rotate(15deg) translate(50px,50px) scale(.50,1.2) skew(5deg,15deg);;/* aqui la forma de las 4 rotate, translate,skew(deg gradosde inclinacion en ejes x,y) ,scale si se elije un eje se pone scale(x)o(y)*/
+      transform: rotate(5deg) translate(10px,10px)  skew(5deg,5deg);;/* aqui la forma de las 4 rotate, translate,skew(deg gradosde inclinacion en ejes x,y) ,scale si se elije un eje se pone scale(x)o(y)*/
       
       }
       .h1nombre{
         transition: all 4s;
       }
-      
     
-    .listaor{
-      background-image: radial-gradient(rgb(176, 176, 235), rgb(168, 147, 147) 20%, rgb(219, 230, 218));
-      
-      
     
-    }
-    header{
-      background-image: radial-gradient(rgb(236, 158, 158), rgb(219, 219, 200), rgb(173, 185, 209));
-    }
-    .hover{
-      background-color: aqua;
-    }
-    .li{
-      background-color:yellow ;
-      }
-      
-    .hover:hover{
-      background-image: linear-gradient(rgb(129, 129, 167),red);
-     
-    }
-    .li:hover{
-      background-image: linear-gradient(rgb(95, 95, 215),rgb(136, 87, 87));
-      
-    }
     .listaordenada:hover{
-      font-size: 35px;
+      font-size: 18px;
       transition: all 5s;
       
     }
-    .listaor:hover{
-      background-image: radial-gradient(rgb(224, 191, 191),rgb(95, 95, 169));
-    }
-    
     .listadesordenada:hover{
-      font-size: 35px;
+      font-size: 18px;
       transition: all 5s;
      
     }
-    .desordenada:hover{
-      background-image: radial-gradient(rgb(224, 328, 318),rgb(75, 75, 169));
-    }
+   
 }
 @media screen and (max-width:812px){
   p{
@@ -324,7 +279,7 @@ main {
 /*esta animation se ve en web y mobil todo lo anterior esta dentro de formato escritorio */
 .animate__animated{
   animation-delay:2s ;
-  animation-duration: 10s;
+  animation-duration: 3s;
   
 }
 .animate__hinge{
@@ -333,3 +288,4 @@ main {
   
   
 }
+
