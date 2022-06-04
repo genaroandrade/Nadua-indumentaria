@@ -201,6 +201,9 @@ main {
   /* display: flex;
   padding: 80px;*/
 }
+span{
+  color: crimson;
+}
 @media screen and (min-width: 920px) {
   main {
     display: flex;
@@ -213,6 +216,9 @@ main {
   }
   .listadesordenada {
     font-size: 30px;
+  }
+  p{
+    font-size: 3rem;
   }
   h1 {
     background-color: black;
@@ -255,7 +261,7 @@ main {
     font-size: 56px;
   }
 }
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 900px) {
   p {
     font-size: 1rem;
   }
