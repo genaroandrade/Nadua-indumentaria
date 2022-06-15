@@ -1,0 +1,8 @@
+@import "variables";
+
+@mixin escritorio{
+    @media(min-width:#{$web}){
+        @content;
+    }
+    
+}

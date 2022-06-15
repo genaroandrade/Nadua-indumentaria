@@ -73,27 +73,10 @@ td {
   .accesorios {
     font-size: 35px;
     margin-bottom: 10px; }
-  .contacto {
-    font-size: 90px;
-    color: #faf290;
-    font-family: italic; }
   table {
     width: 1100px;
     margin: auto;
-    border-collapse: collapse; }
-  .tabla {
-    font-size: 80px;
-    color: #9d732f;
-    padding: 15px;
-    text-align: center; }
-  caption {
-    padding: 10px;
-    font-style: italic;
-    color: #9d732f;
-    text-align: center;
-    caption-side: bottom;
-    margin: 15px;
-    font-size: 56px; } }
+    border-collapse: collapse; } }
 
 /*
   aplicando   sass*/
@@ -180,3 +163,27 @@ div a {
 @media screen and (min-width: 1000px) {
   div .accesorios {
     font-size: 80px; } }
+
+/*   aplicando mixins*/
+@media (min-width: 1000px) {
+  caption {
+    padding: 10px;
+    font-style: italic;
+    color: #9d732f;
+    text-align: center;
+    caption-side: bottom;
+    margin: 15px;
+    font-size: 56px; } }
+
+@media (min-width: 1000px) {
+  .contacto {
+    font-size: 90px;
+    color: #faf290;
+    font-family: italic; } }
+
+@media (min-width: 1000px) {
+  .tabla {
+    font-size: 80px;
+    color: #9d732f;
+    padding: 15px;
+    text-align: center; } }
