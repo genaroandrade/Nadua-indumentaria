@@ -16,7 +16,7 @@ h5 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 250px);
+  grid-template-rows: repeat(3, 350px);
   gap: 1rem; }
 
 .grid div {
@@ -25,7 +25,7 @@ h5 {
 .icons {
   width: 100%;
   position: absolute;
-  bottom: 25px;
+  bottom: 45px;
   color: #0f0f0e;
   font-size: 20px; }
 
@@ -33,7 +33,7 @@ h5 {
   grid-column: 1 / span 2; }
 
 .item-d {
-  grid-column: 1 / span 2; }
+  grid-row: 2 / span 3; }
 
 main img {
   width: 100%;
@@ -62,10 +62,6 @@ td {
   border: 3px solid black;
   padding: 10px;
   text-align: center; }
-
-.carrusel {
-  width: 30%;
-  margin: auto; }
 
 @media screen and (min-width: 1000px) {
   .todo,
@@ -154,15 +150,18 @@ div a {
 
 @media screen and (min-width: 1000px) {
   div .todo {
-    font-size: 80px; } }
+    font-size: 80px;
+    padding-bottom: 35%; } }
 
 @media screen and (min-width: 1000px) {
   div .zapatos {
-    font-size: 80px; } }
+    font-size: 80px;
+    padding-bottom: 35%; } }
 
 @media screen and (min-width: 1000px) {
   div .accesorios {
-    font-size: 80px; } }
+    font-size: 80px;
+    padding-bottom: 45%; } }
 
 /*   aplicando mixins*/
 @media (min-width: 1000px) {
@@ -187,3 +186,42 @@ div a {
     color: #9d732f;
     padding: 15px;
     text-align: center; } }
+
+@media (min-width: 1000px) {
+  .carrusel {
+    width: 83%;
+    height: 51rem;
+    margin: auto;
+    box-sizing: border-box; } }
+
+.formtitulo {
+  text-align: center;
+  font-size: 60px;
+  color: #9d732f; }
+  @media (min-width: 1000px) {
+    .formtitulo {
+      font-size: 105px; } }
+
+.form {
+  text-align: center; }
+  @media (min-width: 1000px) {
+    .form {
+      font-size: 25px; } }
+  .form label {
+    color: #9d732f; }
+  .form input,
+  .form textarea,
+  .form select {
+    background-color: #ede1cb; }
+
+.card {
+  display: inline-block;
+  height: 100%; }
+
+.cardconteiner {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 1000px) {
+    .cardconteiner {
+      justify-content: center;
+      justify-content: space-around; } }
