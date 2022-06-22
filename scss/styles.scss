@@ -239,7 +239,9 @@ caption {
     height: 51rem;
     margin: auto;
     box-sizing: border-box;
+    
   }
+  
 }
 
 .formtitulo {
@@ -254,6 +256,8 @@ caption {
   text-align: center;
   @include escritorio {
     font-size: 25px;
+    
+    
   }
   label {
     color: $color_captiom;
@@ -262,19 +266,34 @@ caption {
   textarea,
   select {
     background-color: #ede1cb;
+   
+    
   }
+  
 }
+
 .card {
   display: inline-block;
   height: 100%;
-  
+  margin-bottom: 20px;
 }
 .cardconteiner {
+  justify-content: center;
+  a:hover {
+    background-color:$color_textoparrafo;
+  }
+  h5 {
+    color: $color_textoparrafo;
+  }
+  p {
+    color: $color_textoparrafo;
+  }
   display: flex;
   flex-wrap: wrap;
   @include escritorio {
     justify-content: center;
     justify-content: space-around;
-    
   }
 }
+
+
