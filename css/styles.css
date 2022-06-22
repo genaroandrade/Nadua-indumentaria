@@ -29,8 +29,8 @@ h5 {
   color: #0f0f0e;
   font-size: 20px; }
 
-.item-a {
-  grid-column: 1 / span 2; }
+.item-c {
+  grid-row: 1/span 2; }
 
 .item-d {
   grid-row: 2 / span 3; }
@@ -233,3 +233,17 @@ div a {
     .cardconteiner {
       justify-content: center;
       justify-content: space-around; } }
+
+.enviar,
+#enviar {
+  padding: 2px;
+  width: 100px; }
+  @media (min-width: 1000px) {
+    .enviar,
+    #enviar {
+      width: 170px; } }
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #9d732f; }
