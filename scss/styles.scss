@@ -112,9 +112,35 @@ footer {
   }
 
   img {
-    width: 4rem;
+    width: 2rem;
+
+    @include tabla {
+      width: 3rem;
+    }
+
+    @include escritorio {
+      width: 4rem;
+    }
   }
-}
+
+  iframe {
+    width: 2rem;
+    height: 2rem;
+
+    @include tabla {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include escritorio {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  
+  }
+
+
 
 nav {
   .nav-link {
@@ -210,6 +236,9 @@ caption {
 }
 
 .tabla {
+  font-size: 25px;
+  margin-bottom: $padding_tabla;
+
   span {
     color: $color-span;
   }
@@ -232,21 +261,27 @@ caption {
   }
 }
 
-.formtitulo {
-  text-align: center;
-  font-size: 60px;
-  color: $color_captiom;
 
-  @include escritorio {
-    font-size: 105px;
-  }
-}
 
 .form {
-  text-align: center;
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: rgb(35, 37, 37);
+
+  .imput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  @include tabla {
+    width: 600px;
+  }
 
   @include escritorio {
-    font-size: 25px;
+    width: 1000px;
   }
 
   label {
@@ -264,10 +299,19 @@ caption {
   display: inline-block;
   height: 100%;
   margin-bottom: 20px;
+  border-radius: 10px;
+  transition: all 300ms;
+
+  @include escritorio {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .cardconteiner {
   justify-content: center;
+  margin: 5px;
 
   a:hover {
     background-color: $color_textoparrafo;
@@ -305,9 +349,13 @@ caption {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
   color: $color_captiom;
+
+  @include escritorio {
+    font-size: 50px;
+  }
 }
 
 .grid-conteiner {
@@ -345,3 +393,28 @@ h2 {
   }
 
 }
+
+.videoscontenedor {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .video {
+
+    margin: 15px;
+  }
+}
+.principio{
+  
+    h5{
+      text-align: center;
+      color: $color-secundario;
+    }
+    @include tabla{
+      display: none;
+    }
+    @include escritorio{
+      display: none;
+    }
+  }
