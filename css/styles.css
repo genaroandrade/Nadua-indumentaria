@@ -233,3 +233,9 @@ div a {
     .cardconteiner {
       justify-content: center;
       justify-content: space-around; } }
+
+h1 {
+  color: rgb(33, 39, 39); }
+h1{
+  font-weight: 900;
+}
