@@ -6,3 +6,9 @@
     }
     
 }
+@mixin tabla{
+    @media(min-width:#{$webtabla}){
+        @content;
+    }
+    
+}
