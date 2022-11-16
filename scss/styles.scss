@@ -16,41 +16,6 @@ h5 {
   color: #d2ac67;
 }
 
-.grid {
-  max-width: 1000px;
-  padding: 16px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 350px);
-  gap: 1rem;
-}
-.grid div {
-  position: relative;
-}
-
-.icons {
-  width: 100%;
-  position: absolute;
-  bottom: 45px;
-  color: rgb(15, 15, 14);
-  font-size: 20px;
-}
-
-.item-a {
-  grid-column: 1 / span 2;
-}
-.item-d {
-  grid-row: 2 / span 3;
-}
-
-main img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
 caption {
   padding: 10px;
   color: rgb(164, 136, 27);
@@ -63,6 +28,7 @@ table {
   margin: auto;
   border-collapse: collapse;
 }
+
 .tabla {
   text-align: center;
   color: rgb(164, 136, 27);
@@ -77,6 +43,7 @@ td {
 }
 
 @media screen and (min-width: 1000px) {
+
   .todo,
   .zapatos,
   .accesorios {
@@ -106,6 +73,7 @@ body {
 
 header {
   padding: 15px;
+
   .h1nombre {
     color: $texto_h1;
     margin: 0px;
@@ -117,6 +85,7 @@ header {
     background-color: $color-secundario;
     padding: 10px;
   }
+
   .logoimg1 {
     border-radius: 50%;
     width: 160px;
@@ -130,6 +99,7 @@ footer {
   align-items: center;
   width: 100%;
   background-color: $color-secundario;
+
   .conteiner {
     width: 100%;
 
@@ -140,10 +110,38 @@ footer {
 
     padding: 10px;
   }
+
   img {
-    width: 4rem;
+    width: 2rem;
+
+    @include tabla {
+      width: 3rem;
+    }
+
+    @include escritorio {
+      width: 4rem;
+    }
   }
-}
+
+  iframe {
+    width: 2rem;
+    height: 2rem;
+
+    @include tabla {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include escritorio {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  
+  }
+
+
+
 nav {
   .nav-link {
     font-size: 22px;
@@ -154,37 +152,45 @@ nav {
     }
   }
 }
+
 div {
   .titulodeparrafo {
     text-align: center;
     color: $color_textoparrafo;
+
     @media screen and(min-width:#{$web}) {
       font-size: 80px;
     }
   }
+
   p {
     font-family: "Roboto", sans-serif;
     font-size: 22px;
     font-weight: bold;
     padding: 20px;
+
     @media screen and(min-width:#{$web}) {
       font-size: 2rem;
     }
+
     span {
       color: $color-span;
     }
   }
 }
+
 div {
   a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+
     &:hover {
       color: $texto_h1;
     }
   }
 }
+
 div {
   .todo {
     @media screen and(min-width:#{$web}) {
@@ -192,12 +198,14 @@ div {
       padding-bottom: 35%;
     }
   }
+
   .zapatos {
     @media screen and(min-width:#{$web}) {
       font-size: 80px;
       padding-bottom: 35%;
     }
   }
+
   .accesorios {
     @media screen and(min-width:#{$web}) {
       font-size: 80px;
@@ -205,6 +213,7 @@ div {
     }
   }
 }
+
 /*   aplicando mixins*/
 caption {
   @include escritorio {
@@ -217,6 +226,7 @@ caption {
     font-size: 56px;
   }
 }
+
 .contacto {
   @include escritorio {
     font-size: $size;
@@ -226,74 +236,185 @@ caption {
 }
 
 .tabla {
+  font-size: 25px;
+  margin-bottom: $padding_tabla;
+
+  span {
+    color: $color-span;
+  }
+
   @include escritorio {
     font-size: $size_tabla;
     color: $color_captiom;
     padding: $padding_tabla;
     text-align: center;
+
   }
 }
+
 .carrusel {
   @include escritorio {
     width: 83%;
     height: 51rem;
     margin: auto;
     box-sizing: border-box;
-    
   }
-  
 }
 
-.formtitulo {
-  text-align: center;
-  font-size: 60px;
-  color: $color_captiom;
-  @include escritorio {
-    font-size: 105px;
-  }
-}
+
+
 .form {
-  text-align: center;
-  @include escritorio {
-    font-size: 25px;
-    
-    
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: rgb(35, 37, 37);
+
+  .imput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
   }
+
+  @include tabla {
+    width: 600px;
+  }
+
+  @include escritorio {
+    width: 1000px;
+  }
+
   label {
     color: $color_captiom;
   }
+
   input,
   textarea,
   select {
     background-color: #ede1cb;
-   
-    
   }
-  
 }
 
 .card {
   display: inline-block;
   height: 100%;
   margin-bottom: 20px;
+  border-radius: 10px;
+  transition: all 300ms;
+
+  @include escritorio {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
+
 .cardconteiner {
   justify-content: center;
+  margin: 5px;
+
   a:hover {
-    background-color:$color_textoparrafo;
+    background-color: $color_textoparrafo;
   }
+
   h5 {
     color: $color_textoparrafo;
+
+    span {
+      color: $color-span;
+    }
   }
+
   p {
     color: $color_textoparrafo;
   }
+
   display: flex;
   flex-wrap: wrap;
+
   @include escritorio {
     justify-content: center;
     justify-content: space-around;
   }
 }
-h1{ color: aqua;}
 
+.enviar,
+#enviar {
+  padding: 2px;
+  width: 100px;
+
+  @include escritorio {
+    width: 170px;
+  }
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  color: $color_captiom;
+
+  @include escritorio {
+    font-size: 50px;
+  }
+}
+
+.grid-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  padding: 50px;
+  gap: 20px;
+
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  object-fit: cover;
+
+
+}
+
+.grid-item {
+  position: relative;
+}
+
+.icons {
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  font-size: 50%;
+  color: white;
+
+  @include escritorio {
+    font-size: 150%;
+
+  }
+
+}
+
+.videoscontenedor {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .video {
+
+    margin: 15px;
+  }
+}
+.principio{
+  
+    h5{
+      text-align: center;
+      color: $color-secundario;
+    }
+    @include tabla{
+      display: none;
+    }
+    @include escritorio{
+      display: none;
+    }
+  }
